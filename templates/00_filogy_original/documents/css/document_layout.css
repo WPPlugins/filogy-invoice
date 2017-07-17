@@ -1,0 +1,143 @@
+/*.filo_document {
+	max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;	
+}*/
+
+.filo_doc_section {
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+
+#filo_logo {
+	max-width: 100%;
+}
+
+.filo_head_data {
+	font-size: 0px; /* elimimate space between inline elements */	 
+}
+
+.filo_table {
+	border-collapse: collapse;
+}
+
+#filo_logo_and_seller {
+	display: block;
+}
+
+/* filo logo and filo seller width, inside the first column */ 
+#filo_logo {
+width: 36%; /* earlier 46% */
+}
+
+#filo_seller {
+width: 56%; /* earlier 46% */
+}
+
+
+.filo_head_data_column, #filo_logo, #filo_seller {
+	display: inline-block;
+	font-size: 12px; /* reset font size, not to be 0 */
+	vertical-align: top;
+}
+  
+/* logo 25% - others 75%*/
+/* others: seller 50% of 75% = 37%, Dok data also 37% */
+/* 25% - 37% - 37% */ 
+.filo_head_data_column#column_1 {
+	width: 62%; /* earlier 50% */
+}
+
+.filo_head_data_column#column_2 {
+	width: 38%; /* earlier 50% */    
+}
+
+
+.filo_head_data_row .filo_label {
+	display: inline-block;
+	width: 50%;
+}
+
+.filo_head_data_row .filo_value {
+	display: inline-block;
+	width: 40%;	
+}
+
+.filo_customer_addresses
+/*,.filo_payment_and_notes*/ {
+    font-size: 0px; /* elimimate space between inline elements */
+  }
+
+.filo_customer_addresses .filo_address
+/*, .filo_payment_method_data,
+.filo_notes*/ {
+	display: inline-block;
+	font-size: 12px; /* reset font size, not to be 0 */
+	vertical-align: top;
+	width: 50%; 
+}
+
+.filo_num {
+    text-align: right;
+}
+
+
+#doc_items_table {
+	width: 100%;
+}
+
+.filo_document_items .classic_formats #description_header {
+	width: 45%;
+}
+.filo_document_items .classic_formats #vat_rates_header {
+	width: 15%;
+}					
+.filo_document_items .classic_formats #qty_header {
+   width: 10%
+}
+.filo_document_items .classic_formats #unit_price_header {
+  width: 15%
+}
+.filo_document_items .classic_formats #net_amount_header {
+	width: 15%
+}
+
+
+.filo_document_items .detailed_format #description_header {
+	width: 30%;
+}
+.filo_document_items .detailed_format #qty_header {
+	width: 10%
+}
+.filo_document_items .detailed_format #unit_price_header {
+	width: 12%
+}
+.filo_document_items .detailed_format #net_amount_header {
+	width: 12%
+}
+.filo_document_items .detailed_format #vat_rates_header {
+	width: 12%;				
+}
+.filo_document_items .detailed_format #vat_amount_header {
+	width: 12%;
+}
+.filo_document_items .detailed_format #gross_amount_header { 
+	width: 12%;
+}
+
+
+#tax_detail_table {
+	width: 100%;	
+}
+
+#filo_summary_line_empty_column_header{
+	width: 64%; /*equal to 1+2+3+4 column of detailed format tabla*/
+}
+
+#filo_summary_line_label_header {
+	width: 24%; /*equal to 5+6 column of detailed format tabla*/
+}
+
+#filo_summary_line_value_header {
+	width: 12%; /*equal to 7 column of detailed format tabla*/
+}

@@ -1,0 +1,202 @@
+/* filo font family settings*/
+@font-face {
+	font-family: 'filo';
+	src:url('../fonts/Financial-Logic.eot');
+	src:url('../fonts/Financial-Logic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Financial-Logic.woff') format('woff'),
+		url('../fonts/Financial-Logic.ttf') format('truetype'),
+		url('../fonts/Financial-Logic.svg#filo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* account-receivables and account-payables status and icon settings on user-edit screen */
+
+/* icons and colors of account receivable and payable status boxes */
+
+#woocommerce_dashboard_status .wc_status_list li.account-profit a:before {
+	content:"\e022";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-profit {
+    background-color: #2cbeff; /*#49ab00;*/ /*green*/
+	width: 99%;
+}
+
+#woocommerce_dashboard_status .wc_status_list li.account-revenues a:before {
+	content:"\e020";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-revenues {
+    background-color: #27a9e3; /*#49ab00;*/ /*green*/
+	width: 99%;
+}
+
+#woocommerce_dashboard_status .wc_status_list li.account-costs a:before {
+	content:"\e021";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-costs {
+    background-color: #1e81ad; /*#49ab00;*/ /*green*/
+	width: 99%;
+}
+
+#woocommerce_dashboard_status .wc_status_list li.account-cashflow a:before {
+	content:"\e030";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-cashflow {
+    background-color: #8eb035; /*#49ab00;*/ /*green*/
+	width: 99%;
+}
+
+#woocommerce_dashboard_status .wc_status_list li.account-receivables a:before {
+	content:"\e002";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-receivables {
+    background-color: #a5cc3d; /*#49ab00;*/ /*green*/
+	width: 99%;
+}
+
+#woocommerce_dashboard_status .wc_status_list li.account-payables a:before {
+	content:"\e003";
+}
+#woocommerce_dashboard_status .wc_status_list li.account-payables {
+    background-color: #d5734e; /*#d54e21;*/ /*red*/
+	width: 99%;
+}
+
+
+/* END: account-receivables and account-payables status and icon settings on user-edit screen */
+
+
+
+/* inventory status list on product edit page */
+
+#woocommerce_dashboard_title{
+	margin-left: 20px;
+}
+
+/* display status boxes in 3 columns in product status handling */
+#inventory_status_product_data #woocommerce_dashboard_status .wc_status_list li {
+    width: 49%; 
+}
+
+#inventory_status_product_data #woocommerce_dashboard_status .wc_status_list li.value {
+    width: 98.5%;
+}
+
+
+/* icon color is white of status boxes */
+#woocommerce_dashboard_status .wc_status_list li a:before {
+	color: white;
+	font-family: 'filo' !important;
+	font-size: 2.8em;
+}
+
+/* text is white of status boxes */
+#woocommerce_dashboard_status .wc_status_list li a strong,
+#woocommerce_dashboard_status .wc_status_list li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* change the default blue hover to gray*/
+#woocommerce_dashboard_status .wc_status_list li a:hover strong, 
+#woocommerce_dashboard_status .wc_status_list li a:hover:before {
+	color: #eeeeee !important; 
+}
+#woocommerce_dashboard_status .wc_status_list li a:hover {
+    color: #eeeeee;
+}
+
+/* icons and colors of different type of inventory status boxes */ 
+#woocommerce_dashboard_status .wc_status_list li.in_stock_qty a:before {
+	content:"\e004";
+}
+#woocommerce_dashboard_status .wc_status_list li.in_stock_qty {
+    background-color: #a5cc3d; /*#ffba4d;*/ /*#27a9e3;*/ /*#21759b;*/ /*dark blue (earlier light blue: #2ea2cc)*/
+}
+
+#woocommerce_dashboard_status .wc_status_list li.committed_qty a:before {
+	content:"\e005";
+}
+#woocommerce_dashboard_status .wc_status_list li.committed_qty {
+    background-color: #27a9e3; /*#1e81ad;*/ /*#ffba00;*/ /*yellow*/
+}
+
+#woocommerce_dashboard_status .wc_status_list li.available_qty a:before {
+	content:"\e006";
+}
+#woocommerce_dashboard_status .wc_status_list li.available_qty {
+    background-color: #8eb035; /*#ffa619;*/ /*#a5cc3d;*/ /*#7ad03a;*/ /*green*/
+}
+
+#woocommerce_dashboard_status .wc_status_list li.ordered_qty a:before {
+	content:"\e007";
+}
+#woocommerce_dashboard_status .wc_status_list li.ordered_qty {
+    background-color: #1e81ad; /*#8eb035;*/ /*#5B8A39; #159960*/ /*dark green*/
+}
+
+#woocommerce_dashboard_status .wc_status_list li.value a:before {
+	content:"\e008";
+}
+#woocommerce_dashboard_status .wc_status_list li.value {
+    background-color: #ffb848; /*#ff9c00;*/ /*#ffb848;*/ /*#852b99;*/ /*#a00;*/ /*purple*/
+}
+
+/* icon for inventory status tab on product edit page */
+#woocommerce-coupon-data ul.wc-tabs li.inventory_status_options  a:before,
+#woocommerce-product-data ul.wc-tabs li.inventory_status_options  a:before,
+.woocommerce ul.wc-tabs li.inventory_status_options  a:before {
+    content: "\e004";
+    font-family: 'filo' !important;
+}
+
+
+/* END: inventory status list on product edit page */
+
+
+
+/* General dasboard satus formatting */
+
+/* for placeholder cell no icon needed */ 
+#woocommerce_dashboard_status .wc_status_list li.placeholder a:before {
+	content: initial; 
+}
+
+
+
+.postbox .partner_status {
+    margin: 0px;
+	border: none;
+  }
+
+/* do not need top and right borders for the outer frame, because inner status boxes will have top and right borders */
+.postbox .inventory_status {
+    margin: 10px;
+    /*border-top: none;
+    border-right: none;*/
+	border: none;
+}
+
+/* we also need top border for the first child, so for every status box */ 
+#woocommerce_dashboard_status .wc_status_list li:first-child {
+    /*border-top: 1px solid #ececec;*/
+	border: none;
+}
+
+/* we need right border for each status box */
+#woocommerce_dashboard_status .wc_status_list li {
+    /*border-right: 1px solid #ececec;*/
+	border: none;
+	margin: 2px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index: 26;
+}
+
+/* this need to avoid very height status boxes */ 
+#woocommerce_dashboard_status .wc_status_list li a:before {
+	height: 10px;
+}
+
+/* END: General dasboard satus formatting */
+

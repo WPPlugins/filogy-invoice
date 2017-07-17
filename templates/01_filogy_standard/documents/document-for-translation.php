@@ -1,0 +1,34 @@
+<?php
+// Not used, for translation purposes only
+_x( 'Purchase Quotation', 'filo_doc', 'filo_text' );
+_x( 'Sales Quotation', 'filo_doc', 'filo_text' );
+_x( 'Quotation', 'filo_doc', 'filo_text' );
+_x( 'Purchase Order', 'filo_doc', 'filo_text' );
+_x( 'Sales Order', 'filo_doc', 'filo_text' );
+_x( 'Order', 'filo_doc', 'filo_text' );
+_x( 'Purchase Goods Receipt', 'filo_doc', 'filo_text' );
+_x( 'Goods Receipt', 'filo_doc', 'filo_text' );
+_x( 'Sales Delivery Note', 'filo_doc', 'filo_text' );
+_x( 'Delivery Note', 'filo_doc', 'filo_text' );
+_x( 'Sales Return', 'filo_doc', 'filo_text' );
+_x( 'Return', 'filo_doc', 'filo_text' );
+_x( 'Purchase Invoice', 'filo_doc', 'filo_text' );
+_x( 'Sales Invoice', 'filo_doc', 'filo_text' );
+_x( 'Invoice', 'filo_doc', 'filo_text' );
+_x( 'Sales Down Payment Invoice', 'filo_doc', 'filo_text' );
+_x( 'Down Payment Invoice', 'filo_doc', 'filo_text' );
+_x( 'Purchase Invoice (before delivery)', 'filo_doc', 'filo_text' );
+_x( 'Sales Invoice (before delivery)', 'filo_doc', 'filo_text' );
+_x( 'Invoice (before delivery)', 'filo_doc', 'filo_text' );
+_x( 'Purchase Invoice Plus Payment', 'filo_doc', 'filo_text' );
+_x( 'Sales Invoice Plus Payment', 'filo_doc', 'filo_text' );
+_x( 'Invoice Plus Payment', 'filo_doc', 'filo_text' );
+_x( 'Purchase Credit Memo', 'filo_doc', 'filo_text' );
+_x( 'Sales Credit Memo', 'filo_doc', 'filo_text' );
+_x( 'Outgoing Payment', 'filo_doc', 'filo_text' );
+_x( 'Incoming Payment', 'filo_doc', 'filo_text' );
+_x( 'Purchase Goods Return', 'filo_doc', 'filo_text' );
+_x( 'Customer', 'filo_doc', 'filo_text' );
+_x( 'Seller', 'filo_doc', 'filo_text' );
+_x( 'Created by %s', 'filo_doc', 'filo_text');
+_x( 'Page', 'filo_doc', 'filo_text'); 

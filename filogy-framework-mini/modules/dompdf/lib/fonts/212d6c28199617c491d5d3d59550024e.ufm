@@ -1,0 +1,44 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+FontName Font-Awesome-More
+FontSubfamily Awesome-More
+UniqueID FontForge 2.0 : Font-Awesome-More : 5-2-2013
+FullName Font-Awesome-More
+Version Version 1.0
+PostScriptName Font-Awesome-More
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 0
+UnderlinePosition 0
+FontHeightOffset 90
+Ascender 860
+Descender -140
+FontBBox 0 -140 1001 860
+StartCharMetrics 25
+U 61440 ; WX 0 ; N uniF000 ; G 24
+U 61952 ; WX 857 ; N uniF200 ; G 3
+U 61953 ; WX 857 ; N uniF201 ; G 4
+U 61954 ; WX 857 ; N uniF202 ; G 5
+U 61955 ; WX 857 ; N uniF203 ; G 6
+U 61956 ; WX 857 ; N uniF204 ; G 7
+U 61957 ; WX 857 ; N uniF205 ; G 8
+U 61958 ; WX 696 ; N uniF206 ; G 9
+U 61959 ; WX 714 ; N uniF207 ; G 10
+U 61960 ; WX 714 ; N uniF208 ; G 11
+U 61961 ; WX 714 ; N uniF209 ; G 12
+U 61962 ; WX 714 ; N uniF20A ; G 13
+U 61963 ; WX 857 ; N uniF20B ; G 14
+U 61964 ; WX 857 ; N uniF20C ; G 15
+U 61965 ; WX 929 ; N uniF20D ; G 16
+U 61966 ; WX 1000 ; N uniF20E ; G 17
+U 61968 ; WX 1000 ; N uniF210 ; G 18
+U 61969 ; WX 1000 ; N uniF211 ; G 19
+U 61970 ; WX 1000 ; N uniF212 ; G 20
+U 61971 ; WX 1000 ; N uniF213 ; G 21
+U 61972 ; WX 1000 ; N uniF214 ; G 22
+U 61973 ; WX 857 ; N uniF215 ; G 23
+EndCharMetrics
+EndFontMetrics

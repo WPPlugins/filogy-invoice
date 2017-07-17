@@ -1,0 +1,284 @@
+.customize-control-color-palette-item_select_frame {
+    
+	background: #f7f7f7;	
+	border: 1px solid #ccc;
+    /*border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;*/
+    
+    color: #555;
+    height: 22px;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 22px;
+    padding: 0 4px;
+
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+}
+
+.customize-control-color-palette-item_select_frame.frame1 {
+	
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding-left: 29px;
+	width: 0;
+}
+.customize-control-color-palette-item_select_frame.frame2 {
+	
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    margin-left: -7px;
+}
+.customize-control-color-palette-item_select select {
+	background: #f7f7f7;
+    border-width: 0px;
+	height: 22px;
+	font-size: 11px;
+	
+	/*This is create a margin on the top of the frame2: margin: 1px; padding: 3px 5px; It should be eliminated*/ 
+    margin: 0; 
+    padding: 0; 
+    
+    /* remove border (outline) around input field */
+    outline: none;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.customize-control-color-palette-item_select label {
+    vertical-align: inherit;
+}
+
+/* set normal color fields wider */
+[id^=customize-control-filo_doc] .wp-color-result:after {
+    min-width: 80px;
+}
+
+/* reduce space between normal color and mycolor reference fields */
+[id^=customize-control-filo_doc].customize-control-color {
+	margin-bottom: 0px;
+}
+
+#customize-control-filo_document_template select,
+#customize-control-filo_doc_act_opt_name_filo_standard_template select,
+#filo_doc_filo_new_template_name,
+#filo_doc_filo_new_opt_name {
+	width: 100%;    
+}
+
+/* readonly json export field should be remain light grey background, beside of the darker grey */
+#customize-control-filo_doc-fd_export_settings textarea {
+	background-color: #f7f7f7;
+}
+
+/* buttons on our customizer panels */
+.filo-customize-button {
+	float: right; 
+	display: inline-block;
+}
+
+/* hide save2 button*/
+#customize-theme-controls #filo-customize-save2 {
+	display: none !important;
+}
+
+/* hide delete2 link*/
+.filo-customize-delete-opt-button2 {
+	display: none !important;
+}
+
+/* place between save as button and export-import accordion group */
+.button.button-primary.save.filo-customize-button {
+	margin-bottom: 30px;
+}
+
+/*margin on top of save as label*/
+#customize-control-filo_doc-fd_saving_options-save_as_opt_name {
+	margin-top: 10px;    
+}
+
+/* line under accordion description */
+.filo-accordion-description {
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/* set smaller font of field labels and eliminate margin under labels inside accordions */
+/* .filo-accordion-item */
+#customize-theme-controls .customize-control-title {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0px;
+    margin: 6px 0px 3px 2px;
+    line-height: 14px;
+}
+
+
+/* prevent margin under setting controls inside accordions */
+/* .filo-accordion-item */
+#customize-theme-controls .customize-control {
+	margin-bottom: 0px;
+}
+
+/* no space between act opt name and delete link*/
+#customize-control-filo_doc_act_opt_name {
+	margin-bottom: 0px;
+}
+
+
+
+/*delete skin opt link and icon side by side, red*/
+.filo-customize-delete-opt-button-label,
+.filo-customize-delete-opt-button:before {
+	display: inline-block;    
+	vertical-align: middle;
+	margin-bottom: 3px;
+}
+
+.filo-customize-delete-opt-button-label {
+	color: #555d66;
+}
+
+/*delete skin opt delete icon*/
+.filo-customize-delete-opt-button:before {
+	color: #c00;
+	content: "\f153";
+	font: 400 16px/20px dashicons;
+	margin-left: 2px;
+	margin-right: 3px;
+}
+
+/* place on top of buttons */
+.filo-customize-button {
+	margin-top: 3px !important;
+}
+
+/* Filo accordion (menu) and customizer main menu item title icons */
+
+/* filo accordion font family settings*/
+@font-face {
+	font-family: 'filo-customizer';
+	src:url('../fonts/Filogy-Customizer.eot');
+	src:url('../fonts/Filogy-Customizer.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Filogy-Customizer.woff') format('woff'),
+		url('../fonts/Filogy-Customizer.ttf') format('truetype'),
+		url('../fonts/Filogy-Customizer.svg#filo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wp-customizer .filo-accordion-item-bar .menu-item-handle {
+    min-height: 50px;
+    padding: 12px 10px 10px 10px;
+    /* vertical-align: middle; */
+}
+
+/* filo accordion (menu) and customizer main menu item title padding and aling center */
+.filo-accordion-item-bar .menu-item-title,
+li.accordion-section h3.accordion-section-title .accordion_title_beside_icon {
+	padding-left: 4px;
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;	
+}
+
+/* filo accordion (menu) and customizer main menu item title icon genral */
+.filo-accordion-item-bar .item-title:before,
+li.accordion-section h3.accordion-section-title:before {
+	font-family: 'filo-customizer';
+    font-size: 32px;
+    font-weight: normal;
+    
+    display: inline-block;
+    padding: 2px 8px 0 0;
+    
+    vertical-align: middle;
+}
+
+
+.filo-accordion-item-bar .item-title {
+	padding: 0 10px 0 0;
+}
+
+/* set back color picker input field size to the original 65px width, because inside accordion menu-items, it is set to 100% unnecessarily */
+.wp-customizer .menu-item-settings .wp-picker-container input[type=text].wp-color-picker {
+	width: 65px;
+}
+
+/* space under opened color picker */ 
+.iris-border {
+	margin-bottom: 10px;
+}
+
+/* spinner before page refresh in customizer preview; set spinner and a white opaque background */ 
+.wp-full-overlay.preview-desktop .filo_customizer_unload_spinner {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5) url('../../../../../wp-includes/images/spinner-2x.gif') no-repeat center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* set left and right space of accordions to 3px (instead of 12px), the color pickers will have enought spapce */
+/* 12px padding is set for customizer-control elements (e.g. fields), here: #customize-theme-controls .customize-pane-child.accordion-section-content */
+/* it is not good for accordion nav menu items, because it has to be wilder, 5% margin is enought, thus set -9px margin (12px - 9px = 3px), all id of filo nav-menu-items always begins with "customize-control-filo_doc-" */
+/* we decreased margins by 9px, for this reason we have to increase the width by 2 * 9px = 18px, and the left space will be reduced to 3px */ 
+li[id^="customize-control-filo_doc-"].customize-control-nav_menu_item {
+	margin-left: -9px; 
+	width: calc(100% + 18px);
+}
+
+/* filo accordion (menu) icons */
+/* normal panels icons (filo-cust-ctrl-normal-panel-category) */
+.filo-cust-ctrl-document_general_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c071";  } /* c071_document_general ! */
+.filo-cust-ctrl-header_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c003"; } /* c003_widget_head */
+.filo-cust-ctrl-content_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c004"; } /* c004_contentl */
+.filo-cust-ctrl-widget_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c002"; } /* c002_widget */
+.filo-cust-ctrl-widget_layout_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c005"; } /* c005_widget_layout ! */
+.filo-cust-ctrl-cell_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c001"; } /* c001_cell */
+.filo-cust-ctrl-row_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c078"; } /* c078_document_row */
+.filo-cust-ctrl-fullwidth_row_partition.filo-cust-ctrl-normal-panel-category .item-title:before { content: "\c077"; } /* c077_document_row_fullwidth */
+
+/* normal panels icons (filo-cust-ctrl-doc_title-panel-category) */
+.filo-cust-ctrl-content_partition.filo-cust-ctrl-doc_title-panel-category .item-title:before { content: "\c044"; } /* c044_doc_title_contentl ! */
+.filo-cust-ctrl-widget_partition.filo-cust-ctrl-doc_title-panel-category .item-title:before { content: "\c042"; } /* c042_doc_title_widget ! */
+.filo-cust-ctrl-cell_partition.filo-cust-ctrl-doc_title-panel-category .item-title:before { content: "\c041"; } /* c041_doc_title_cell ! */
+
+/* data table panels icons (filo-cust-ctrl-data_table-panel-category) */
+.filo-cust-ctrl-data_table_content_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c034"; } /* c034_data_table_content */
+.filo-cust-ctrl-data_table_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c035"; } /* c035_data_table */
+.filo-cust-ctrl-data_table_label_cell_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c036"; } /* c036_data_table_label */
+.filo-cust-ctrl-data_table_value_cell_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c037"; } /* c037_data_table_value */
+.filo-cust-ctrl-header_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c033"; } /* c033_data_table_widget_header */
+.filo-cust-ctrl-widget_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c032"; } /* c032_data_table_widget */
+.filo-cust-ctrl-cell_partition.filo-cust-ctrl-data_table-panel-category .item-title:before { content: "\c031"; } /* c031_data_table_cell ! */
+
+/* item table panels icons (filo-cust-ctrl-item_table-panel-category) */
+.filo-cust-ctrl-item_table_partition.filo-cust-ctrl-item_table-panel-category .item-title:before { content: "\c015"; } /* c015_item_table */
+.filo-cust-ctrl-item_table_header_cell_partition.filo-cust-ctrl-item_table-panel-category .item-title:before { content: "\c016"; } /* c016_item_table_header */
+.filo-cust-ctrl-item_table_body_cell_partition.filo-cust-ctrl-item_table-panel-category .item-title:before { content: "\c017"; } /* c017_item_table_body */
+.filo-cust-ctrl-item_table_footer_cell_partition.filo-cust-ctrl-item_table-panel-category .item-title:before { content: "\c018"; } /* c018_item_table_footer */
+
+
+/* Customizer main menu icons */
+/*li.accordion-section#accordion-section-filo_doc_saving_options h3.accordion-section-title:before { content: "\c095"; font-size: 2em; padding: 2px 10px 2px 4px; }*/ /* c095_save */ /*1.5em; padding: 8px 14px 8px 8px;*/
+/*li.accordion-section#accordion-section-filo_color_palette h3.accordion-section-title:before { content: "\f309"; font-family: dashicons; font-size: 2em; padding: 2px 10px 2px 4px; }*/ /* color palette dashicon */
+li.accordion-section#accordion-section-filo_doc_saving_options h3.accordion-section-title:before { content: "\c095"; } /* c095_save */ /*1.5em; padding: 8px 14px 8px 8px;*/
+li.accordion-section#accordion-section-filo_color_palette h3.accordion-section-title:before { content: "\c096"; } /* c096_color_palette */
+li.accordion-section#accordion-section-Document-General h3.accordion-section-title:before { content: "\c071"; } /* c071_document_general */
+li.accordion-section#accordion-panel-fd_row_widgets h3.accordion-section-title:before { content: "\c077"; } /* c077_document_row_fullwidth */
+/*li.accordion-section#accordion-section-All-Widgets h3.accordion-section-title:before { content: "\c072"; }*/ /* c072_all_widgets */
+li.accordion-section#accordion-panel-fd_normal_widgets h3.accordion-section-title:before { content: "\c073"; } /* c073_normal_widgets */
+li.accordion-section#accordion-panel-fd_doc_title_widgets h3.accordion-section-title:before { content: "\c076"; } /* c076_document_title */
+li.accordion-section#accordion-panel-fd_data_table_widgets h3.accordion-section-title:before { content: "\c074"; } /* c074_data_table */
+li.accordion-section#accordion-panel-fd_item_table_widgets h3.accordion-section-title:before { content: "\c075"; } /* c075_item_table */
+
+li.accordion-section#accordion-section-filo_doc_template_custom_settings h3.accordion-section-title:before { content: "\f108"; font-family: dashicons; font-size: 2em; padding: 2px 12px 2px 2px; } /* settings dashicon */
+li.accordion-section#accordion-section-filo_doc_global_options h3.accordion-section-title:before { content: "\f108"; font-family: dashicons; font-size: 2em; padding: 2px 12px 2px 2px; } /* settings dashicon */
+
+/* END Filo accordion (menu) and customizer main menu item title icons */

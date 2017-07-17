@@ -1,0 +1,53 @@
+account_code; account_name; parent_account_code; account_nature; account_type; cashflow_category; is_partner_account
+1; Assets; ; heading; assets; ; 
+11; Cash; 1; summary; assets; ; 
+1110; Cash; 11; detail; assets; ; 
+1120; Bank Account; 11; detail; assets; ; 
+12; Receivables; 1; summary; assets; ; 
+1210; Account Receivable; 12; detail; assets; operating; yes
+1220; Account Receivable - Foreign; 12; detail; assets; operating; yes
+13; Inventory; 1; summary; assets; ; 
+1310; Inventory; 13; detail; assets; operating; 
+2; Liabilities; ; heading; liabilities; ; 
+21; Account Payable; 2; summary; liabilities; ; 
+2110; Account Payable; 21; detail; liabilities; operating; yes
+2120; Account Payable - Foreign; 21; detail; liabilities; operating; yes
+222; Sales Tax Liabilities; 2; summary; liabilities; ; 
+2220; Tax Payable; 222; detail; liabilities; operating; 
+23; Other Current Liabilities; 2; summary; liabilities; ; 
+2310; Goods Received Not Invoiced; 23; detail; liabilities; operating; 
+2320; Shipping Fee; 23; detail; liabilities; operating; 
+2330; Opening Balance Adjustments; 23; detail; liabilities; operating;
+2340; Expense Clearing Account; 23; detail; liabilities; operating; 
+3; Equities; ; heading; equities; ; 
+3010; Owners Equity; 3; detail; equities; financing; 
+3020; Owners Draw; 3; detail; equities; financing; 
+3030; Retained Earnings; 3; detail; equities; financing; 
+4; Revenues; ; heading; revenues; ; 
+41; Sales Revenues; 4; summary; revenues; ; 
+4110; Sales Revenues; 41; detail; revenues; ; 
+4120; Sales Revenues - Foreign; 41; detail; revenues; ; 
+4130; Sales Revenues - Services; 41; detail; revenues; ; 
+4140; Sales Revenues - Shipping Charge; 41; detail; revenues; ; 
+4150; Sales Revenues - Fee; 41; detail; revenues; ; 
+5; Cost of Sales; ; heading; costs of sales; ; 
+51; Cost of Goods Sold; 5; summary; costs of sales; ; 
+5110; Cost of Goods Sold; 51; detail; costs of sales; ; 
+5120; Cost of Goods Sold - Foreign; 51; detail; costs of sales; ; 
+5190; Cost of Goods Sold - Negative Inventory Variance; 51; detail; costs of sales; ; 
+52; Cost of Goods Sold Difference; 5; summary; costs of sales; ; 
+5280; Price Difference Account (FIFO and Inventory Modification); 52; detail; costs of sales; ; 
+5290; Price Difference (Moving Average, Std Price); 52; detail; costs of sales; ; 
+6; Exprenses; ; heading; expenses; ; 
+61; Shop Expenses; 6; summary; expenses; ; 
+6110; Rent Expense; 61; detail; expenses; ; 
+6120; Utilities Expense; 61; detail; expenses; ; 
+6130; Telecommunication Expense; 61; detail; expenses; ; 
+6190; Not Distributed Shop Expense; 61; detail; expenses; ; 
+65; Other Expenses; 6; summary; expenses; ; 
+6510; Purchasing Tax; 65; detail; expenses; ; 
+8; Financing; ; heading; financing; ; 
+81; Finance Income and Expens; 8; summary; financing; ; 
+8110; Discounts Earned; 81; detail; financing; ; 
+8120; Discounts Allowed; 81; detail; financing; ; 
+8130; Rounding; 81; detail; financing; ; 

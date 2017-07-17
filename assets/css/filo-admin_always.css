@@ -1,0 +1,123 @@
+/* set 2px left margin to fit to the other type of notifications */
+.notice, div.error, div.updated {
+	margin: 5px 15px 0 2px;
+}
+
+/* display notice block in new line */
+#filo_notice {
+	display: block;
+	border-left-color: #d77960!important; /* light red */
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+#filo_message {
+	display: block;
+	border-left-color: #6cbd26!important; /* green */
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+
+/* buttons on notice and about page are red with dark red border */
+#filo_notice .submit a.button-primary,
+.filo-about a.button-primary {
+	background: #d77960; /* light red */
+    border-color: #c14f2f; /* dark red */
+    box-shadow: 0 1px 0 #c14f2f; /* overwrite WP blue to dark red */
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #c14f2f,1px 0 1px #c14f2f,0 1px 1px #c14f2f,-1px 0 1px #c14f2f; /* overwrite WP blue to dark red */   
+}
+
+/* buttons HOVER on notice and about page are dark red */
+#filo_notice .submit a.button-primary:hover,
+.filo-about a.button-primary:hover {
+    background-color: #c14f2f; /* dark red */
+}
+
+/* buttons on notice are red with dark red border */
+#filo_notice .submit a.button-primary:hover,
+.filo-actions a.button-primary:hover {
+	background: #d75835; /* normal red */
+}
+
+
+/* decrease space between lines on notice */
+#filo_notice p {
+	margin: .5em 0;
+}
+#filo_notice .submit {
+	padding: 0;
+}
+
+/* Menu icons BEGIN*/
+
+/* filo font family settings*/
+@font-face {
+	font-family: 'filo';
+	src:url('../fonts/Financial-Logic.eot');
+	src:url('../fonts/Financial-Logic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Financial-Logic.woff') format('woff'),
+		url('../fonts/Financial-Logic.ttf') format('truetype'),
+		url('../fonts/Financial-Logic.svg#filo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#adminmenu #toplevel_page_filo_sales .menu-icon-generic div.wp-menu-image:before {
+	font-family: 'filo' !important;
+    content: "\e010";
+    font-size: 1.3em!important
+}
+
+#adminmenu #toplevel_page_filo_purchase .menu-icon-generic div.wp-menu-image:before {
+	font-family: 'filo' !important;
+    content: "\e011";
+    font-size: 1.3em!important
+}
+
+#adminmenu #toplevel_page_filo_financials .menu-icon-generic div.wp-menu-image:before {
+	font-family: 'filo' !important;
+    content: "\e009";
+    font-size: 1.3em!important
+}
+/* Menu icons END*/
+
+/*order list buttons BEGIN*/
+.order_actions .print {
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    padding: 0!important;
+    height: 2em!important;
+    width: 2em;
+}
+
+.order_actions .print:after {
+	font-family: 'filo' !important;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.85;
+}
+
+/*print*/
+.order_actions .print:after {
+    content: "\e800";
+}
+/*order list buttons END*/
+
+select.filo_metafield {
+	width: 100%;
+}

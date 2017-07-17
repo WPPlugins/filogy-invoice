@@ -1,0 +1,828 @@
+/*the last action button in the row aligned right (e.g. preview)*/
+
+#order_data .order_data_column .form-field .filo_doc_date {
+    width: 50%;
+}
+
+.filo_last_button {
+	float: right !important; 
+}
+
+.filo_generate_pdf {
+    min-width: 100px;
+}
+  
+.save_draft_document, 
+.save_order {
+    min-width: 130px;
+}
+
+#poststuff #filo-order-actions .inside,
+#poststuff #class-filo-meta-box-financial-document-actions-mini .inside {
+	margin: 0;
+	padding: 0;
+}
+
+#poststuff #class-filo-meta-box-financial-document-actions-mini .inside .form-field-wide {
+	padding: 2px 10px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#poststuff #class-filo-meta-box-financial-document-actions-mini .inside .filo_sa_deliv_note_numbering_sequence_id_field, 
+#poststuff #class-filo-meta-box-financial-document-actions-mini .inside .filo_sa_invoice_numbering_sequence_id_field  {
+	display: none;
+}
+
+#filo_pseudo_doc_actions {
+	padding-left: 12px;
+	padding-right: 22px;
+	padding-bottom: 12px;
+}
+
+/*reset 48% fixed wc width (two columns), so not only two fields can be displayed side by side*/
+/*set some space between fields*/
+#order_data .order_data_column #filo_document_base_data .form-field {
+	width: auto;
+	padding-right: 10px !important;
+}
+
+/*set full width of customer user select field inside the column, so it is always in new row*/
+#order_data .order_data_column #filo_document_base_data ._customer_user_field {
+	width: 100%;
+}
+ 
+
+/*Fincancial doc title is inline, for displaying sequence field beside title*/
+.filo-financial-doc-title {
+	/*display: inline-block;*/
+}
+
+/*Seqenve field is inline, for displaying sequence field beside title*/
+.filo-sequence-field,
+.filo-document-number-field {
+	display: inline-block;
+	padding-right: 15px;
+	margin: 15px, 0, 0, 0;
+}
+
+
+#filo_draft_actions ._doc_status_field, 
+#filo_draft_actions ._case_status_field {
+	margin: 0;    
+ } 
+
+/*leave space between field and it's label*/
+.filo-sequence-field label, .form-field label {
+	padding-right: 10px;
+}
+ 
+/*display customer user field in separate row*/
+.filo_customer_user {
+	display: block;
+	width: 100% !important;
+	margin-bottom: 10px !important;
+
+} 
+
+.filo_customer_user label{
+	display: block;
+	font-weight: bold;
+	color: black;
+	padding-top: 1.33em;
+} 
+
+.filo_customer_user #_customer_user{
+	display: block;
+} 
+
+/*field description displayed under the field*/
+span.description:before {
+/*	display: block;*/
+    content: '\A';
+    white-space: pre;
+}
+
+/*remove 9px left margin before ? signs*/
+img.help_tip {
+	margin: 0 0 0 0 !important;
+}
+
+#filo_document_logo {
+	min-width: 500px;
+}
+
+#filo_upload_buttons {
+	margin-top: 3px;
+}
+
+#filo_document_logo_image img {
+	background: #FAFAFA;
+	border-color: #ccc #eee #eee #ccc;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	max-width: 490px;
+}
+
+.filo_tree_cell {
+	background: #AAAAAA;
+	/*border-top: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;*/
+	border-top: 4px solid #FFFFFF;
+	border-bottom: 4px solid #FFFFFF;
+	min-width: 120px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px; 
+    z-index: 26;	
+}
+
+/* Doc Tree Arrow BEGIN */
+
+	/* if there is more referenced document on a lower level (sub document), we have to display the gray border on the top and bottom of array */
+	/* leave at least 35px space between two document boxes, to the arrow not touch the next document box */
+	.filo_tree_cell_arrow_border {
+		color: #AAAAAA; 
+		border-top: 2px solid #DDDDDD;
+		border-bottom: 2px solid #DDDDDD;
+		min-width: 35px; 
+	}
+	
+	/* else transparent arrow to be displayd on the top and bottom of array (so at the end of the row, the horizontal border is not continued) */
+	.filo_tree_cell_transparent_arrow_border {
+		color: #AAAAAA; 
+		border-top: 2px solid #0000ffff;
+		border-bottom: 2px solid #0000ffff;
+	}
+	
+	/* the arrow should be displayed in a wrapper div that position it: */
+	.filo_tree_cell_arrow_wrapper {
+		width: 23px; 
+		height: 22px; 
+		font-size: 35px; 
+
+	}
+	
+	.filo_tree_cell_arrow_wrapper .filo_tree_cell_forward_arrow {
+		position: relative; 
+		left: -7px; 
+		top: -15px;
+	}
+		
+	.filo_tree_cell_arrow_wrapper .filo_tree_cell_back_arrow {
+		position: relative; 
+		left: -5px; 
+		top: 0px;
+	}
+
+/* Doc Tree Arrow END */
+
+/*Tree item text white color*/
+.filo_tree_item {
+	padding: 5px;
+	color: white;
+}
+.filo_tree_item a {
+	color: white;
+	text-decoration: none;
+}
+
+.filo_tree_item .document_number a {
+	text-decoration: underline;
+}
+
+/*tree item title underlined*/
+.filo_tree_item .title {
+	font-size: 14px;
+	padding: 5px;
+	padding-top: 7px;
+	
+	padding-bottom: 3px;
+	
+    -webkit-border-radius: 10px;
+    border-radius: 5px
+	
+}
+
+.filo_tree_item .line_under_title {
+	margin-top: 2px;
+	border-bottom: 2px solid #ffffff;
+}
+/*ident rows of tree items under line*/
+.filo_tree_item .document_number, 
+.filo_tree_item .total,
+.filo_tree_item .status,
+.filo_tree_item .balance_due {
+	padding-left: 29.5px;
+}
+
+/*icons before tree items*/
+.filo_tree_item .title:before {
+    font-family: 'filo' !important;
+    /*content: "\e011";*/
+    font-size: 1.5em!important;
+    padding-right: 3px;
+}
+
+/*Cancel*/
+.filo_tree_item .title.filo_is_cancel {
+	background-color: #C93535; /*red*/ 
+}
+
+/*Cancelled*/
+.filo_tree_item .title.filo_has_cancel_child,
+.filo_tree_item .title.filo_has_cancel_child a
+ {
+	background-color: #F3F61D; /*yellow, old: #FFEF34, #FCFF33*/
+	color: #808080; /*grey*/
+}
+
+
+/*Tree item icons*/
+/*Sales*/
+.filo_sa_quotation:before { content: "\e510"; }
+
+.shop_order:before { content: "\e520"; }
+
+/*.filo_sa_invoice.down_payment:before { content: "\e515"; }*/
+/*.filo_sa_invoice.bef_del:before { content: "\e515"; }*/
+/*.filo_sa_deliv_note.bef_del:before { content: "\e515"; }*/
+
+.filo_sa_deliv_note:before { content: "\e530"; }
+
+.filo_sa_deliv_note.return:before { content: "\e531"; }
+ 
+.filo_sa_deliv_note.bef_del_return:before { content: "\e531"; }
+
+.filo_sa_invoice:before { content: "\e540"; }
+
+/*.filo_sa_invoice.plus_payment:before { content: "\e515"; }*/
+
+.filo_sa_invoice.credit_memo:before { content: "\e541"; }
+
+.filo_sa_invoice.bef_del_credit_memo:before { content: "\e541";  }
+
+.filo_in_payment:before { content: "\e550"; }
+
+
+/*Purchase*/
+.filo_pu_quotation:before { content: "\e515"; }
+	
+.filo_pu_order:before { content: "\e525"; }
+
+/*.filo_pu_invoice bef_del:before { content: "\e525"; }*/
+/*.filo_pu_goods_rec bef_del:before { content: "\e525"; }*/
+
+.filo_pu_goods_rec:before { content: "\e535"; }
+
+.filo_pu_goods_rec.return:before { content: "\e536"; }
+ 
+.filo_pu_goods_rec.bef_del_return:before { content: "\e536"; }
+
+/*.filo_pu_landed_costs:before { content: "\e525"; }*/
+
+.filo_pu_invoice:before { content: "\e545"; }
+
+/*.filo_pu_invoice plus_payment:before { content: "\e525"; }*/
+
+.filo_pu_invoice.credit_memo:before { content: "\e546"; }
+
+.filo_pu_invoice.bef_del_credit_memo:before { content: "\e546"; }
+
+.filo_out_payment:before { content: "\e555"; }
+
+
+.filo_tree_item .total,
+.filo_tree_item .status,
+.filo_tree_item .balance_due {
+	font-size: 11px;
+}
+
+.filo_tree_item .document_number {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.trans_match_head_column_container {
+  clear: both;
+}
+
+.trans_match_head_column{
+	width: 31%;
+	padding: 0 2% 0 0;
+	float: left;
+}
+
+/*reset 48% fixed wc width (two columns), so not only two fields can be displayed side by side*/
+/*set some space between fields*/
+.trans_match_head_column .form-field {
+	width: auto;
+	padding-right: 10px !important;
+}
+
+/*labels end fields of trans_match head metabox become one under the other*/
+.trans_match_head_column .form-field label {
+  display: block;
+  padding: 0 0 3px;
+}
+
+/*FILO order item save button subtitutes original save button (.save-action), let's format it */ 
+#woocommerce-order-items .wc-order-add-item .save-action-filo {
+	float: left;
+	margin-right: 2px;
+}
+
+/* filo-order-items .inside html div-s is automatically genrated for woocommerce-financial-order-items metabox
+ * it would not be necessary, but could not be switched off. Set the same settings than #woocommerce-order-items .inside
+ * and set the border of the inside woocommerce-order-items div to none to eliminate double background  
+ */
+/* we do not need them, because we add the metabox using the original css id: woocommerce-order-items */
+/*
+#filo-order-items .inside {
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+}
+#woocommerce-order-items {
+	border: none;
+}*/
+
+/*hide original order item save button */ 
+/*#woocommerce-order-items .wc-order-add-item .save-action {
+	display: none;
+}*/
+
+/* settings for case items column of case list */
+/* BEGIN column-case_items and column-case_finadocs */
+/*
+*/ 
+.column-case_items {
+    width: 12%
+}
+.column-case_direction {
+	width: 5px;
+}
+
+
+/*finadoc list begin*/
+.widefat .column-financial_document_status {
+    width: 15%;
+}
+
+.widefat .column-financial_document_subtype {
+    width: 12%;
+}
+
+.widefat .column-customer {
+    width: 15%;
+}
+
+.widefat .column-financial_document_total {
+    width: 12%;
+}
+
+.widefat .column-shipping_address {
+    width: 17%;
+}
+
+.widefat .column-financial_document_creation_date {
+    width: 12%;
+}
+
+.widefat .column-financial_document_due_date {
+    width: 12%;
+}
+
+table.wp-list-table .column-customer_message, table.wp-list-table .column-order_notes {
+    width: 5% !important ;
+}
+
+
+.widefat .column-order_actions {
+    width: 15%;
+}
+/*finadoc list end*/
+
+/*Mobile view begin*/
+/*this is a complex column for mobile view, that is not displayed in none mobile view*/
+.widefat .column-order_title_mobile,
+.widefat .column-case_title_mobile {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 782px) {
+
+	.widefat .column-financial_document_status {
+		display: none !important;
+	}
+	
+	.widefat .column-financial_document_subtype {
+		display: none !important;
+	}
+
+	.widefat .column-order_title_mobile,
+	.widefat .column-case_title_mobile {
+	    display: block;
+	}
+
+
+}
+/*Mobile view end*/
+
+table.wp-list-table .column-case_items table.case_items,
+table.wp-list-table .column-case_docs table.case_finadocs {
+    width: 100%;
+    margin: 3px 0 0;
+    padding: 0;
+    display: none
+}
+table.wp-list-table .column-case_items table.case_items td,
+table.wp-list-table .column-case_docs table.case_finadocs td {
+    border: 0;
+    margin: 0;
+    padding: 0 0 3px
+}
+table.wp-list-table .column-case_items table.case_items td.qty,
+table.wp-list-table .column-case_docs table.case_finadocs td.docname {
+    color: #999;
+    padding-right: 6px;
+    text-align: left
+}
+
+/* END column-case_items and column-case_finadocs */
+
+/* initial_product_inventory_settings table*/
+/* set editable fields background to green */
+#filo_initial_product_inventory_settings #apply_checkbox,
+#ipis_filo_new_in_stock_qty.filo_editable,
+#ipis_new_purchase_price.filo_editable,
+#ipis_inventory_valuation_method.filo_editable,
+#ipis_new_standard_price.filo_editable {
+    background-color: #EEFFEE
+}
+
+/* this is needed for wrapping table header titles od initial inventory table */
+table.product_inventory_settings th {
+	    white-space: normal;
+}
+
+/* filo font family settings*/
+@font-face {
+	font-family: 'filo';
+	src:url('../fonts/Financial-Logic.eot');
+	src:url('../fonts/Financial-Logic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Financial-Logic.woff') format('woff'),
+		url('../fonts/Financial-Logic.ttf') format('truetype'),
+		url('../fonts/Financial-Logic.svg#filo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*thumb up icon for before debit and credit fields*/
+#filo-document-journal-entries .debit_on_normal_balance:before,
+#filo-document-journal-entries .credit_on_reverse_balance:before {
+	content: "\e023";
+}
+
+/*thumb down icon for before debit and credit fields*/
+#filo-document-journal-entries .credit_on_normal_balance:before,
+#filo-document-journal-entries .debit_on_reverse_balance:before {
+	content: "\e024";
+}
+
+
+#filo-document-journal-entries .credit_on_normal_balance:before,
+#filo-document-journal-entries .debit_on_normal_balance:before,
+#filo-document-journal-entries .credit_on_reverse_balance:before,
+#filo-document-journal-entries .debit_on_reverse_balance:before {
+	font-family: 'filo';
+	font-size: 1.1em;
+	margin-left: 4px;
+}
+
+
+/*switch off border shadow of debit and credit inputs, limit width to 80% to leave place for thumb icons*/
+#filo-document-journal-entries .jei_credit_field  input,
+#filo-document-journal-entries .jei_debit_field  input {
+	-webkit-box-shadow: none;
+	width: 70%;
+	text-align: right;
+	/*padding: 0px 5px;*/
+	
+}
+
+/* wrapper p-s were needed for hanfling thumb icons, set the margin to 0 in input table*/
+table#journal_entries td p{
+    margin: 0;
+    
+  }
+
+/*BEGIN Sales and purchase icons into case list table*/
+.filo_finadoc_direction_sales:before {
+    font-family: 'filo' !important;
+    content: "\e010";
+    font-size: 1.1em!important;
+    padding-right: 10px;
+    color: #0074a2;
+}
+
+.filo_finadoc_direction_purchase:before {
+    font-family: 'filo' !important;
+    content: "\e011";
+    font-size: 1.1em!important;
+    padding-right: 10px;
+    color: #0074a2;
+}
+/*END Sales and purchase icons into case list table*/
+
+/*Document and Case status display rounded frame*/
+.filo_doc_status, .filo_case_status {
+    color: #fff;
+    text-align: center;
+    padding: 2px 10px 2px 10px;
+    margin: 1px 0 0 1px;
+    vertical-align: top;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 26;	
+    background-color: #909090; /*grey*/
+}
+
+.filo_doc_status a, .filo_case_status a {
+	color: white;
+}
+
+/*BEGIN FINADOC and CASE TREE Status colors*/
+.filo_doc_status_  { /*empty status*/
+	background-color: #909090; /*grey*/
+}
+
+/*draft*/
+.filo_doc_status_draft, 
+.filo_tree_cell.filo_tree_doc_status_draft {
+	background-color: #909090; /*grey*/
+}
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_draft {
+	color: #909090; /*grey*/
+}
+
+/*open*/
+.filo_doc_status_open, 
+.filo_tree_cell.filo_tree_doc_status_open {
+	background-color: #ffb848 ; /*orange*/
+}
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_open {
+	color: #ffb848; /*orange*/	
+}
+
+/*open-copied*/
+.filo_doc_status_open-copied, 
+.filo_tree_cell.filo_tree_doc_status_open-copied {
+	background-color: #ffb848 ; /*orange*/
+}
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_open-copied {
+	color: #ffb848; /*orange*/	
+}
+
+/*closed*/
+.filo_doc_status_closed, 
+.filo_tree_cell.filo_tree_doc_status_closed {
+	background-color: #a5cc3d; /*green*/
+}
+
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_closed{
+	color: #a5cc3d; /*green*/
+}
+
+/*trash*/		
+.filo_doc_status_trash, 
+.filo_tree_cell.filo_tree_doc_status_trash {
+	background-color: #27a9e3; /*red*/
+}
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_trash {
+	color: #27a9e3; /*blue*/
+}
+
+/*closed_manually*/
+.filo_doc_status_closed_manually, 
+.filo_tree_cell.filo_tree_doc_status_closed_manually {
+	background-color: #a5cc3d; /*green*/
+}
+.filo_tree_cell_arrow_wrapper .filo_tree_doc_status_closed_manually {
+	color: #a5cc3d; /*green*/
+}
+/*END FINADOC and CASE TREE Status colors*/
+
+/*BEGIN CASE Status colors*/
+.filo_case_status_closed {
+	background-color: #a5cc3d; /*green*/
+}
+.filo_case_status_ { /*empty status*/
+	background-color: #909090; /*grey*/
+}
+.filo_case_status_draft {
+	background-color: #909090; /*grey*/
+}
+.filo_case_status_trash {
+	background-color: #27a9e3; /*blue old: #27a9e3*/
+}
+
+.filo_case_status_quoted.filo_finadoc_direction_sales { /*chained css*/
+	background-color: #ffb848; /*orange*/
+}
+.filo_case_status_quoted.filo_finadoc_direction_purchase { /*chained css*/
+	background-color: #27a9e3; /*blue*/
+}
+
+.filo_case_status_ordered.filo_finadoc_direction_sales { /*chained css*/
+	background-color: #ffb848; /*orange*/
+}
+.filo_case_status_ordered.filo_finadoc_direction_purchase { /*chained css*/
+	background-color: #27a9e3; /*blue*/
+}
+
+.filo_case_status_awaiting-payment { /* If not paid yet */
+	background-color: #27a9e3; /*blue*/
+} 
+.filo_case_status_to-be-paid-back { /* If paid, and after a return have to be paid back */
+	background-color: #ffb848; /*orange*/
+} 
+.filo_case_status_to-be-delivered { /* If paid */
+	background-color: #ffb848; /*orange*/
+} 
+
+/*Purchase*/
+.filo_case_status_to-be-paid { /* If not paid yet */
+	background-color: #ffb848; /*orange*/
+} 
+.filo_case_status_awaiting-payment-back { /* If paid, and after a return have to be paid back */
+	background-color: #27a9e3; /*blue*/
+} 
+.filo_case_status_awaiting-delivery { /* If paid */
+	background-color: #27a9e3; /*blue old: #27a9e3*/
+} 
+	
+/*Sales*/
+.filo_case_status_to-be-invoiced {
+	background-color: #ffb848; /*orange*/
+}
+/*Purchase*/
+.filo_case_status_awaiting-invoice {
+	background-color: #27a9e3; /*blue*/
+}
+.filo_case_status_returned {
+	background-color: #ffb848; /*orange*/
+}
+.filo_case_status_returned-invoiced {
+	background-color: #ffb848; /*orange*/
+}
+
+/*Sales*/
+.filo_case_status_awaiting-payment { /* If not paid yet */
+	background-color: #27a9e3; /*blue old: 2ea2cc, #1ab6be*/
+} 
+/*Purchase*/
+.filo_case_status_to-be-paid { /* If not paid yet */
+	background-color: #ffb848; /*orange*/
+} 
+.filo_case_status_completed { /* If paid */
+	background-color: #aac92c; /*green old: #73a724, #dde67b, #cfd773, #28b779*/
+} 
+.filo_case_status_credited-not-delivered {
+	background-color: #ffb848; /*orange old: #fabf6f*/
+}
+.filo_case_status_credited-not-received {
+	background-color: #ffb848; /*orange*/
+}
+.filo_case_status_credited {
+	background-color: #ffb848; /*orange*/
+}
+.filo_case_status_credited {
+	background-color: #ffb848; /*orange*/
+}
+
+/*END CASE Status colors*/
+
+/* FILO ABOUT: From WP 4.4 some css of wp-about page (.about-wrap) has been changed, this is set it back to filo-about page BEGIN */ 
+.filo-about .col {
+	vertical-align: top !important;
+}
+
+.filo-about .col h3{
+	margin-top: 0px !important;
+	margin-bottom: 10px !important;
+}
+
+.filo-about .feature-section .media-container {
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.filo-about .feature-section .svg-container {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e1e1e3;
+}
+
+.filo-about .feature-section .svg-container img {
+    max-width: 150px;
+}
+
+
+/* eliminate gray background under images, we have an oun bacground when it is needed, and it was a second border */
+ .about-wrap.filo-about img {
+	border-style: none;
+}
+	
+hr.line_between_rows {
+	border: dashed 1px #555;
+	margin-top: 20px;
+}
+	
+/* FILO ABOUT END */
+
+/* In WP 4.4, WooCommerce Settings page sub tabs are too close to main tabs */
+/* In WP 4.4 wp-admin.min.css was modified and margin:0 was set here: (1682) .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper, h3.nav-tab-wrapper {border-bottom: 1px solid #ccc; margin: 0;     padding: 9px 15px 0 0; line-height: inherit } */
+/* @TODO: We fix it, with this !important setting, but WC probably also fix it, then it can be deleted */
+.woocommerce .woo-nav-tab-wrapper {
+    margin-bottom: 16px !important;
+}
+
+#FILO_Meta_Box_Product_Bulk_Inventory_Settings th {
+	font-size: small; 
+}
+
+/* set grew background for SVG containers on about page (e.g. in Setup Jedi) */
+.about-wrap .feature-section .svg-container img {
+    max-width: 145px;
+}
+
+.about-wrap .feature-section .svg-container {
+    background-color: #E0E0E0;
+    padding: 55px 0;
+    text-align: center;
+}
+
+/* on initial product_inventory_settin page, if no results found, the text and table are displayed on top of each other without this */
+#custom_page .tablenav {
+    height: initial;
+    margin-bottom: -25px;
+}
+
+/* Check if WC Updated */
+/* red background for DRAFT mark in doc admin headings */
+.filo_draft_mark {
+	background-color: #d54e21; /*red*/
+	color: white;
+	font-weight: bold;
+	/*font-size: 85%;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+	border-radius: 6px;
+	position: relative;
+    top: -4px;
+}
+
+/* Settings page: frame for skin options overview */
+.filo_skin_otpions_overview {
+	border: 2px solid grey;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+/* order item openess data design and icons BEGIN */
+.filo_item_openess_data, .filo_item_payment_data {
+	display:inline;
+}
+
+.filo_item_openess_data_open:after {
+	content: "\e025";
+	font-family: "filo";
+	font-size: 1.2em;
+}
+.filo_item_openess_data_close:after {
+	content: "\e026";
+	font-family: "filo";
+	font-size: 1.2em;
+}
+.filo_item_payment_data_open:after {
+	content: "\e028";
+	font-family: "filo";
+	font-size: 1.2em;
+}
+.filo_item_payment_data_close:after {
+	content: "\e027";
+	font-family: "filo";
+	font-size: 1.2em;
+}
+.filo_item_committed_ordered:after {
+	content: "\e029";
+	font-family: "filo";
+	font-size: 1.2em;
+}
+/* order item openess data design and icons END */

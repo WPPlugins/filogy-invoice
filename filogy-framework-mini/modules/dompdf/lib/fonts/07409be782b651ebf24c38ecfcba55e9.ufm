@@ -1,0 +1,63 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+FontName Font-Awesome-More
+FontSubfamily Awesome-More
+UniqueID FontForge 2.0 : Font-Awesome-More : 4-2-2013
+FullName Font-Awesome-More
+Version Version 1.0
+PostScriptName Font-Awesome-More
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 0
+UnderlinePosition 0
+FontHeightOffset 90
+Ascender 860
+Descender -140
+FontBBox 0 -140 1072 860
+StartCharMetrics 44
+U 61440 ; WX 0 ; N uniF000 ; G 43
+U 62208 ; WX 927 ; N uniF300 ; G 8
+U 62209 ; WX 785 ; N uniF301 ; G 9
+U 62210 ; WX 642 ; N uniF302 ; G 18
+U 62211 ; WX 855 ; N uniF303 ; G 20
+U 62212 ; WX 855 ; N uniF304 ; G 27
+U 62213 ; WX 855 ; N uniF305 ; G 28
+U 62214 ; WX 855 ; N uniF306 ; G 16
+U 62215 ; WX 1000 ; N uniF307 ; G 17
+U 62216 ; WX 855 ; N uniF308 ; G 19
+U 62217 ; WX 855 ; N uniF309 ; G 29
+U 62218 ; WX 927 ; N uniF30A ; G 31
+U 62219 ; WX 1070 ; N uniF30B ; G 30
+U 62220 ; WX 1000 ; N uniF30C ; G 23
+U 62221 ; WX 1070 ; N uniF30D ; G 41
+U 62222 ; WX 713 ; N uniF30E ; G 42
+U 62223 ; WX 1000 ; N uniF30F ; G 26
+U 62224 ; WX 855 ; N uniF310 ; G 3
+U 62225 ; WX 1000 ; N uniF311 ; G 4
+U 62226 ; WX 855 ; N uniF312 ; G 6
+U 62227 ; WX 855 ; N uniF313 ; G 7
+U 62228 ; WX 855 ; N uniF314 ; G 10
+U 62229 ; WX 785 ; N uniF315 ; G 11
+U 62230 ; WX 855 ; N uniF316 ; G 12
+U 62231 ; WX 1000 ; N uniF317 ; G 13
+U 62232 ; WX 855 ; N uniF318 ; G 14
+U 62233 ; WX 855 ; N uniF319 ; G 15
+U 62234 ; WX 855 ; N uniF31A ; G 5
+U 62235 ; WX 855 ; N uniF31B ; G 21
+U 62236 ; WX 1070 ; N uniF31C ; G 22
+U 62237 ; WX 855 ; N uniF31D ; G 24
+U 62238 ; WX 855 ; N uniF31E ; G 25
+U 62240 ; WX 855 ; N uniF320 ; G 32
+U 62241 ; WX 855 ; N uniF321 ; G 33
+U 62242 ; WX 570 ; N uniF322 ; G 34
+U 62243 ; WX 855 ; N uniF323 ; G 35
+U 62244 ; WX 1000 ; N uniF324 ; G 36
+U 62245 ; WX 855 ; N uniF325 ; G 37
+U 62246 ; WX 855 ; N uniF326 ; G 38
+U 62247 ; WX 855 ; N uniF327 ; G 39
+U 62248 ; WX 713 ; N uniF328 ; G 40
+EndCharMetrics
+EndFontMetrics

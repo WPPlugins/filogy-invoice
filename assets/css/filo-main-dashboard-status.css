@@ -1,0 +1,69 @@
+/* filo font family settings*/
+/* based on dashboard.css */
+@font-face {
+	font-family: 'filo';
+	src:url('../fonts/Financial-Logic.eot');
+	src:url('../fonts/Financial-Logic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Financial-Logic.woff') format('woff'),
+		url('../fonts/Financial-Logic.ttf') format('truetype'),
+		url('../fonts/Financial-Logic.svg#filo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#filogy_dashboard_status .postbox {
+	border: none;
+}
+
+#filogy_dashboard_status .inside {
+    padding: 0;
+    margin: 0;
+}
+
+/*#filogy_dashboard_status .wc_status_list li.profit-this-month a:before {*/
+
+#filogy_dashboard_status .wc_status_list li.profit-this-month {
+	/*width: 100%;*/
+}
+#filogy_dashboard_status .wc_status_list li.profit-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e022";
+    color: #2cbeff;
+    /*font-size: 1.3em!important*/
+}
+
+#filogy_dashboard_status .wc_status_list li.cashflow-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e030";
+    color: #8eb035;
+    /*font-size: 1.3em!important*/
+}
+
+
+#filogy_dashboard_status .wc_status_list li.revenue-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e020";
+    color: #27a9e3;
+    /*font-size: 1.3em!important*/
+}
+
+#filogy_dashboard_status .wc_status_list li.costs-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e021";
+    color: #1e81ad;
+    /*font-size: 1.3em!important*/
+}
+
+#filogy_dashboard_status .wc_status_list li.receivables-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e002";
+    color: #a5cc3d;
+    /*font-size: 1.3em!important*/
+}
+
+#filogy_dashboard_status .wc_status_list li.payables-this-month a:before {
+	font-family: 'filo' !important;
+    content: "\e003";
+    color: #d5734e;
+    /*font-size: 1.3em!important*/
+}

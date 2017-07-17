@@ -1,0 +1,140 @@
+
+/* filo logo and filo seller width, inside the first column */ 
+/*#filo_logo {*/
+.cell-of-FILO_Widget_Invbld_Logo {
+width: 28%; /* earlier 46% */
+}
+
+#filo_logo img {
+    max-width: 100%;
+    max-height: 160px;
+}
+
+/*#filo_seller {*/
+.cell-of-FILO_Widget_Invbld_Seller_Address {
+width: 36%; /* earlier 46% */
+}
+
+.cell-of-FILO_Widget_Invbld_Head_Data_Vertical {
+width: 36%; /* earlier 46% */
+}
+
+/*.filo_customer_addresses .filo_address {*/
+.cell-of-FILO_Widget_Invbld_Billing_Address,
+.cell-of-FILO_Widget_Invbld_Shipping_Address {
+	width: 50%; 
+}
+
+/* item lable column widths BEGIN */
+
+/*.filo_document_items .classic_formats #description_header {*/
+#invoice_items .cell-of-FILO_Widget_Invbld_Line_Item_Name {
+    width: 35%;
+}
+
+/*???*/
+.filo_document_items .classic_formats #vat_rates_header {
+	width: 15%;
+}					
+
+
+
+
+
+
+
+/*.filo_document_items .classic_formats #qty_header {*/
+#invoice_items cell-of-FILO_Widget_Invbld_Line_Qty {
+   width: 10%
+}
+
+/*.filo_document_items .classic_formats #unit_price_header {*/
+#invoice_items cell-of-FILO_Widget_Invbld_Line_Unit_Total_Net {
+  width: 15%
+}
+
+/*.filo_document_items .classic_formats #net_amount_header {*/
+#invoice_items cell-of-FILO_Widget_Invbld_Line_Total_Net {
+	width: 15%
+}
+
+.filo_num {
+    text-align: right;
+}
+
+
+#doc_items_table {
+	width: 100%;
+}
+
+.filo_document_items .classic_formats #description_header {
+	width: 45%;
+}
+.filo_document_items .classic_formats #vat_rates_header {
+	width: 15%;
+}					
+.filo_document_items .classic_formats #qty_header {
+   width: 10%
+}
+.filo_document_items .classic_formats #unit_price_header {
+  width: 15%
+}
+.filo_document_items .classic_formats #net_amount_header {
+	width: 15%
+}
+
+
+.filo_document_items .detailed_format #description_header {
+	width: 30%;
+}
+.filo_document_items .detailed_format #qty_header {
+	width: 10%
+}
+.filo_document_items .detailed_format #unit_price_header {
+	width: 12%
+}
+.filo_document_items .detailed_format #net_amount_header {
+	width: 12%
+}
+.filo_document_items .detailed_format #vat_rates_header {
+	width: 12%;				
+}
+.filo_document_items .detailed_format #vat_amount_header {
+	width: 12%;
+}
+.filo_document_items .detailed_format #gross_amount_header { 
+	width: 12%;
+}
+
+
+#tax_detail_table {
+	width: 100%;	
+}
+
+#filo_summary_line_empty_column_header{
+	width: 64%; /*equal to 1+2+3+4 column of detailed format tabla*/
+}
+
+#filo_summary_line_label_header {
+	width: 24%; /*equal to 5+6 column of detailed format tabla*/
+}
+
+#filo_summary_line_value_header {
+	width: 12%; /*equal to 7 column of detailed format tabla*/
+}
+
+/*set the upper widgets to full page size*/
+.cell-of-FILO_Widget_Invbld_Payment_Data, 
+.cell-of-FILO_Widget_Invbld_Notes {
+	width: 100%;    
+} 
+
+.filo_document_body p {
+	margin: 0px;
+}
+
+/* set gray bacground behind document */
+.filo_document_body {
+	background-color: gray;
+	padding: 20px;
+}
